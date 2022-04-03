@@ -6,8 +6,8 @@ function Profile() {
   const themeColor = useSelector((state)=> state.theme.value);
 
   return (
-    <div style={{background: themeColor}}>
-      <h1>Profile</h1>
+    <div style={{background: themeColor}} className='container'>
+      <h3>Profile</h3>
       <p>Name: {user.name}</p>
       <p>Age: {user.age}</p>
       <p>Email: {user.email}</p>

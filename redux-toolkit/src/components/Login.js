@@ -6,7 +6,7 @@ function Login() {
     const dispatch = useDispatch(); // dispatch or for sending state data
 
     return (
-        <div>
+        <div className='container'>
             <button
                 onClick={() => {
                     dispatch(login({ //this is how we access payload of action

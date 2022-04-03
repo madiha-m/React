@@ -10,7 +10,7 @@ function StudyCRUD() {
     const [userName, setUserName] = useState('');
 
     return (
-        <div>
+        <div className='container'>
             <div className='addUser'>
                 <input type="text" placeholder='name'
                     onChange={(e) => { setName(e.target.value) }} />
@@ -29,12 +29,12 @@ function StudyCRUD() {
                     userLst.map((user) => {
                         return (
                             <div key={user.id}>
-                                <h1>
+                                <h3>
                                     {user.name}
-                                </h1>
-                                <h1>
+                                </h3>
+                                <h3>
                                     {user.userName}
-                                </h1>
+                                </h3>
                                 <input type="text" placeholder='user name'
                                     onChange={(e) => { setUserName(e.target.value) }}
                                 />

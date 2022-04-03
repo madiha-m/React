@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 100%;
+  border: 3px solid #969696;
+  background: #d9dbda;
+  margin: 5px;
+  padding: 5px;
+}
