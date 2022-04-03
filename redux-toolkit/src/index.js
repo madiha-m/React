@@ -5,11 +5,13 @@ import { Provider } from 'react-redux';
 import App from './App';
 import userReducer from './features/user';
 import themeReducer from './features/theme';
+import crudReducer from './features/crud'
 
 const store = configureStore({
   reducer: {
     user: userReducer,
     theme: themeReducer,
+    crud: crudReducer,
   }, /* reducer is a property having object containing reducers
         colletion of reducers > reducer hook created by reacted , builtin feature, it contains all reducers
 
