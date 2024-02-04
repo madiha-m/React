@@ -5,11 +5,13 @@ import Hi from "../../basics/src/components/Hi";
 import Welcome from "../../basics/src/components/Welcome";
 import Message from "./components/Message";
 import Counter from "./components/Counter";
+import FunctionClick from "./components/FunctionClick";
 // import Greet from "./components/Greet";
 
 function App() {
   return (
     <div className="App">
+      <FunctionClick />
       {/* <Counter /> */}
       {/* <Message /> */}
       {/* <Greet name="madiha." task=" Working now.">
@@ -18,9 +20,9 @@ function App() {
       <Greet name="use of props" task=" and study of reusability.">
         <button>Action</button>
       </Greet> */}
-      <Welcome name=", this is welcom screen." task=" Studying props" />
+      {/* <Welcome name=", this is welcom screen." task=" Studying props" />
       <Welcome name="Hi, " task="Whats going on" />
-      <Welcome />
+      <Welcome /> */}
       {/*<Hi /> */}
     </div>
   );
