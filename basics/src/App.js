@@ -4,12 +4,14 @@ import Greet from "../../basics/src/components/Greet";
 import Hi from "../../basics/src/components/Hi";
 import Welcome from "../../basics/src/components/Welcome";
 import Message from "./components/Message";
+import Counter from "./components/Counter";
 // import Greet from "./components/Greet";
 
 function App() {
   return (
     <div className="App">
-      <Message />
+      <Counter />
+      {/* <Message /> */}
       {/* <Greet name="madiha." task=" Working now.">
         <p>This is children props</p>
       </Greet>
