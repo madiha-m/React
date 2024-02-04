@@ -30,6 +30,8 @@ class Counter extends Component {
      2nd call back fun
 
     */
+
+    // here sending an object to setState
     this.setState(
       {
         count: this.state.count + 1,
@@ -48,12 +50,31 @@ class Counter extends Component {
     console.log(this.state.count);
   }
 
+  //pass arrow fun as arg, whenever need to update state based on previous state
+  dec() {
+    this.setState((previousState) => ({
+      count: previousState.count + 1,
+    }));
+  }
+
+  decrementFive() {
+    // react group multiple setState calls to 1 for better performance
+    this.dec();
+    this.dec();
+    this.dec();
+    this.dec();
+    this.dec();
+  }
+
   render() {
     return (
       <div>
         <div>Count - {this.state.count}</div>
         <button onClick={() => this.increment()}>Increment</button>
         <button onClick={() => this.decrement()}>Decrement</button>
+
+        <div>Count Five - {this.state.count}</div>
+        <button onClick={() => this.decrementFive()}>Decrement to 5</button>
       </div>
     );
   }
