@@ -10,15 +10,15 @@ import Counter from "./components/Counter";
 function App() {
   return (
     <div className="App">
-      <Counter />
+      {/* <Counter /> */}
       {/* <Message /> */}
-      {/* <Greet name="madiha." task=" Working now.">
+      <Greet name="madiha." task=" Working now.">
         <p>This is children props</p>
       </Greet>
       <Greet name="use of props" task=" and study of reusability.">
         <button>Action</button>
       </Greet>
-      <Welcome name=", this is welcom screen." task=" Studying props" />
+      {/* <Welcome name=", this is welcom screen." task=" Studying props" />
       <Welcome name="Hi, " task="Whats going on" />
       <Welcome />
       <Hi /> */}

@@ -1,11 +1,21 @@
 import React from "react";
 
-const Greet = (props) => {
-  console.log(props);
+// const Greet = (props) => {
+
+/*
+- destructuring > unpack values from arrays or props from objs
+- 2 ways : in props
+*/
+const Greet = ({ name, task, children }) => {
+  console.log("name: ", name, ", task: ", task, ", children: ", children);
+  // console.log(props);
   return (
     <h1>
-      Hi Greetings. This is {props.name} {props.task}
-      {props.children}
+      {/* destructure */}
+      Hi Greetings. This is {name} {task}
+      {children}
+      {/* Hi Greetings. This is {props.name} {props.task}
+      {props.children} */}
     </h1>
   );
 };
