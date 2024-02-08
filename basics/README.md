@@ -6,7 +6,7 @@ Study notes
 
 There are 4 ways
 
-- CSS styling > Stylesheet.js , cssStyling.css
-- Inline styling
+- CSS styling > CssStylesheet.js , cssStyling.css, use of props, use of template literals (class name is alretnate library of it)
+- Inline styling > InlineStyling.js
 - CSS Modules
 - CSS in JS Libraries
