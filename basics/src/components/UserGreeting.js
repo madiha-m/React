@@ -35,10 +35,20 @@ class UserGreeting extends Component {
     3rd approach: ternary approach
     can b used inside jsx
     */
-    return this.state.isLoggedin ? (
-      <div>ternary approach 2nd operator returned if 1st is true</div>
-    ) : (
-      <div>ternary approach 3rd operator returned if 1st is fals</div>
+    // return this.state.isLoggedin ? (
+    //   <div>ternary approach 2nd operator returned if 1st is true</div>
+    // ) : (
+    //   <div>ternary approach 3rd operator returned if 1st is fals</div>
+    // );
+
+    /*
+    4th approach: Short circuit approach
+    a specific case of ternary approach
+    while show something or nothing use it
+    expression is evaluate 1st, if true than RHS show else not
+    */
+    return (
+      this.state.isLoggedin && <div>4th approach short circuit approach</div>
     );
 
     // return (
