@@ -13,12 +13,14 @@ import UserGreeting from "./components/UserGreeting";
 import NameList from "./components/NameList";
 import CssStylesheet from "./components/CssStylesheet";
 import InlineStyling from "./components/InlineStyling";
+import ModuleStyling from "./components/ModuleStyling";
 // import Greet from "./components/Greet";
 
 function App() {
   return (
     <div className="App">
-      <InlineStyling />
+      <ModuleStyling />
+      {/* <InlineStyling /> */}
       {/* <CssStylesheet primary={true} /> */}
       {/* <NameList /> */}
       {/* <UserGreeting /> */}
