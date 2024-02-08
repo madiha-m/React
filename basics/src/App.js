@@ -19,7 +19,7 @@ import ModuleStyling from "./components/ModuleStyling";
 function App() {
   return (
     <div className="App">
-      <ModuleStyling />
+      {/* <ModuleStyling /> */}
       {/* <InlineStyling /> */}
       {/* <CssStylesheet primary={true} /> */}
       {/* <NameList /> */}
