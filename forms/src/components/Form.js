@@ -15,6 +15,7 @@ class Form extends Component {
       //  1st step
       username: "",
       comment: "",
+      topic: "react",
     };
   }
 
@@ -30,6 +31,14 @@ class Form extends Component {
       comment: event.target.value,
     });
     console.log(this.state.comment);
+  };
+  handleTopicChange = (event) => {
+    this.setState(
+      {
+        topic: event.target.value,
+      },
+      console.log(this.state.topic)
+    );
   };
 
   render() {
@@ -51,6 +60,14 @@ class Form extends Component {
             value={this.state.comment}
             onChange={this.handleCommentChange}
           />
+        </div>
+        <div>
+          <label>Topic: </label>
+          <select value={this.state.topic} onChange={this.handleTopicChange}>
+            <option value="react">React</option>
+            <option value="angular">Angular</option>
+            <option value="vue">Vue</option>
+          </select>
         </div>
       </form>
     );
