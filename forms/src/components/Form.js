@@ -51,7 +51,9 @@ class Form extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      // if Form tag is absence then handler used in onSubmit will be assind to btn in onClick event
+      //   <form onSubmit={this.handleSubmit}>
+      <section>
         <div>
           <label>User Name: </label>
           {/* 1st assign state with value */}
@@ -82,8 +84,15 @@ class Form extends Component {
             - use js submit fun, it also handle inputs  
              in Form tag use onSubmit event
         */}
-        <button type="submit">Submit</button>
-      </form>
+        {/* <button type="submit">Submit</button>
+      </form> */}
+        {/* submit form data in the absense of <Form>:
+            - use handler in onClick event, instead of onSubmit in btn
+        */}
+        <button type="submit" onClick={this.handleSubmit}>
+          Submit
+        </button>
+      </section>
     );
   }
 }
