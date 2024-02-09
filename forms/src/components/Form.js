@@ -41,9 +41,17 @@ class Form extends Component {
     );
   };
 
+  handleSubmit = (event) => {
+    // form reciving data as args
+    alert(`${this.state.username} ${this.state.comment} ${this.state.topic}`);
+
+    // form will refreshed after submit by default, to prevent use prevent default
+    event.preventDefault();
+  };
+
   render() {
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <div>
           <label>User Name: </label>
           {/* 1st assign state with value */}
@@ -69,6 +77,12 @@ class Form extends Component {
             <option value="vue">Vue</option>
           </select>
         </div>
+        {/* submit form data:
+            - click submit btn, page refresh auto
+            - use js submit fun, it also handle inputs  
+             in Form tag use onSubmit event
+        */}
+        <button type="submit">Submit</button>
       </form>
     );
   }
