@@ -14,6 +14,7 @@ class Form extends Component {
     this.state = {
       //  1st step
       username: "",
+      comment: "",
     };
   }
 
@@ -23,6 +24,12 @@ class Form extends Component {
       username: event.target.value,
     });
     console.log(this.state.username);
+  };
+  handleCommentChange = (event) => {
+    this.setState({
+      comment: event.target.value,
+    });
+    console.log(this.state.comment);
   };
 
   render() {
@@ -36,6 +43,13 @@ class Form extends Component {
             type="text"
             value={this.state.username}
             onChange={this.handleUsernameChange}
+          />
+        </div>
+        <div>
+          <label>Comments: </label>
+          <textarea
+            value={this.state.comment}
+            onChange={this.handleCommentChange}
           />
         </div>
       </form>
