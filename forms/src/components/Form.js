@@ -50,6 +50,12 @@ class Form extends Component {
   };
 
   render() {
+    /* code cleanup: 
+      - destructure state prop in render method
+      - remove this.state from all occurances
+    */
+    const { username, comment, topic } = this.state;
+
     return (
       // if Form tag is absence then handler used in onSubmit will be assind to btn in onClick event
       //   <form onSubmit={this.handleSubmit}>
@@ -60,20 +66,26 @@ class Form extends Component {
           {/* handle onChange event */}
           <input
             type="text"
-            value={this.state.username}
+            // value={this.state.username}
+            value={username}
             onChange={this.handleUsernameChange}
           />
         </div>
         <div>
           <label>Comments: </label>
           <textarea
-            value={this.state.comment}
+            // value={this.state.comment}
+            value={comment}
             onChange={this.handleCommentChange}
           />
         </div>
         <div>
           <label>Topic: </label>
-          <select value={this.state.topic} onChange={this.handleTopicChange}>
+          <select
+            // value={this.state.topic}
+            value={topic}
+            onChange={this.handleTopicChange}
+          >
             <option value="react">React</option>
             <option value="angular">Angular</option>
             <option value="vue">Vue</option>
