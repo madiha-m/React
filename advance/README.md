@@ -2,4 +2,6 @@
 
 - Fragments > Fragments.js
 
-- Pure Components > PureComp.js, ParentComp, RegularComp.
+- Pure Components (for class component only) > PureComp.js, ParentComp, RegularComp.
+
+- Memo Component (for Fun comp only) > MemoComp.js, ParentMemoComp.js
