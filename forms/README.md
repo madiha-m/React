@@ -10,4 +10,6 @@
 
 - Component Mounting Lifecycle Methods > LifecycleA.js
 
-- 1st method: Mounting explains > LifecycleA.js, LifecycleA.js, LifecycleAChild.js
+- 1st method: Mounting explains > Lifecycle.js, LifecycleA.js, LifecycleAChild.js
+
+- Component Updating Lifecycle Methods > Lifecycle.js, LifecycleA.js, LifecycleAChild.js

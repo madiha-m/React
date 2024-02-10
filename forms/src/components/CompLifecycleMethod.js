@@ -16,7 +16,7 @@ class CompLifecycleMethod extends Component {
                 <b>Mounting: </b>
               </p>
               <li>
-                called, while instance od comp. created and inserted in DOM
+                called, while instance of comp. created and inserted in DOM
               </li>
               <li>
                 Methods: constructor, static getDerivedStateFromProps, render
@@ -110,7 +110,7 @@ class CompLifecycleMethod extends Component {
                 <b>Updating: </b>
               </p>
               <li>
-                claaed, while comp. re-render due to changes in props/state
+                clalled, while component re-render due to changes in props/state
               </li>
               <li>
                 Methods: static getDerivedStateFromProps, shouldComponentUpdate,
