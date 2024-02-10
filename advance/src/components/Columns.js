@@ -12,7 +12,8 @@ function Columns() {
      */
 
     // <div>
-    <React.Fragment>
+    // <React.Fragment>
+    <>
       {/* can accept "key" attribute when rendering list of items
             Key attributes are only one acceptable by react fragment
        */}
@@ -25,7 +26,8 @@ function Columns() {
       <td>Name</td>
       <td>Madiha</td>
       {/* </div> */}
-    </React.Fragment>
+      {/* </React.Fragment> */}
+    </>
   );
 }
 
