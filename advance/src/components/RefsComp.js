@@ -6,6 +6,9 @@ import React, { Component } from "react";
     -1st create a ref > React.createRef()
     -2nd attach ref in input element in render method
     -3rd call focus method on input element
+
+    example problem: fetch input values
+    Solution: Apply ref with btn
 */
 
 class RefsComp extends Component {
@@ -25,6 +28,10 @@ class RefsComp extends Component {
     console.log(this.inputRef);
   }
 
+  clickHandler = () => {
+    alert(this.inputRef.current.value);
+  };
+
   render() {
     return (
       <div>
@@ -33,6 +40,9 @@ class RefsComp extends Component {
           Ans: perform in componentDidMount lifecycle hook
         */}
         <input type="text" ref={this.inputRef} />
+
+        {/* Apply ref to fetch input values */}
+        <button onClick={this.clickHandler}>Click</button>
       </div>
     );
   }
