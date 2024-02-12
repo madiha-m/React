@@ -7,9 +7,10 @@ class RefClassCom extends Component {
     this.inputRef = React.createRef();
   }
 
-  componentDidMount() {
-    this.inputRef.current.value;
-    console.log(this.inputRef);
+  // not going to use componentDidMount(), instad cteate method, which focus on input element, called by parent cmop
+  focusInput() {
+    this.inputRef.current.focus();
+    // now need to creat parent comp
   }
 
   render() {

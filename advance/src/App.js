@@ -5,13 +5,15 @@ import ParentComp from "./components/ParentComp";
 import ParentMemoComp from "./components/ParentMemoComp";
 import PureComp from "./components/PureComp";
 import RefClassCom from "./components/RefClassCom";
+import RefParentClassCom from "./components/RefParentClassCom";
 import RefsComp from "./components/RefsComp";
 import Table from "./components/Table";
 
 function App() {
   return (
     <div className="App">
-      <RefClassCom />
+      <RefParentClassCom />
+      {/* <RefClassCom /> */}
       {/* <CallbackRefsComp /> */}
       {/* <RefsComp /> */}
       {/* <ParentMemoComp /> */}
