@@ -21,11 +21,12 @@ Steps:
 import React from "react";
 
 // Portals: 3rd step
-import ReactDom from "react-dom";
+import ReactDOM from "react-dom";
+// ERROR:  'ReactDOM' is not defined no-undef
 
 function Portals() {
-  return (
-    ReactDOM.createPortals(<div>Portals Comp</div>),
+  return ReactDOM.createPortal(
+    <div>Portals Comp</div>,
     document.getElementById("portal-root")
   );
 }
